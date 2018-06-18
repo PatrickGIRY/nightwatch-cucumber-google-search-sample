@@ -1,1 +1,1 @@
-# nightwatch-cucumber-google-search-sample
+# Nightwatch Cucumber Google Search Sample
