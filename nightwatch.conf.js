@@ -3,7 +3,12 @@ const chromedriver = require('chromedriver');
 const geckodriver = require('geckodriver');
 
 require('nightwatch-cucumber')({
-  cucumberArgs: ['--require', 'features/step_definitions','--format', 'node_modules/cucumber-pretty', '--format', 'json:reports/cucumber.json', 'features']
+  cucumberArgs: [ '--require-module', 'babel-core/register'
+                , '--require-module', 'babel-polyfill'
+                , '--require', 'features/step_definitions'
+                , '--format', 'node_modules/cucumber-pretty'
+                , '--format', 'json:reports/cucumber.json', 'features'
+                ]
 });
 
 module.exports = {

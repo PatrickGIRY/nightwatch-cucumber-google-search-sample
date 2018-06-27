@@ -5,7 +5,7 @@
     "line": 1,
     "id": "google-search",
     "tags": [],
-    "uri": "features/google.feature",
+    "uri": "features/google-search.feature",
     "elements": [
       {
         "id": "google-search;searching-google",
@@ -21,11 +21,11 @@
             "line": 5,
             "name": "I open Google's search page",
             "match": {
-              "location": "features/step_definitions/google.js:4"
+              "location": "features/step_definitions/google.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1783000000
+              "duration": 1911000000
             }
           },
           {
@@ -34,11 +34,11 @@
             "line": 6,
             "name": "the title is \"Google\"",
             "match": {
-              "location": "features/step_definitions/google.js:10"
+              "location": "features/step_definitions/google.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 12000000
             }
           },
           {
@@ -47,11 +47,11 @@
             "line": 7,
             "name": "the Google search form exists",
             "match": {
-              "location": "features/step_definitions/google.js:14"
+              "location": "features/step_definitions/google.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 37000000
             }
           }
         ]

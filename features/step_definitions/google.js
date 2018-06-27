@@ -1,16 +1,18 @@
-const { client } = require('nightwatch-cucumber')
-const { When, Then } = require('cucumber')
+"use strict"
 
-When('I open Google\'s search page', () => {
-  return client
+import { client } from 'nightwatch-cucumber'
+import { When, Then } from 'cucumber'
+
+When('I open Google\'s search page', async () => {
+  await client
     .url('http://www.google.com')
     .waitForElementVisible("body", 10000)
 });
 
-Then('the title is {string}', (title) => {
-  return client.assert.title(title)
+Then('the title is {string}', async (title) => {
+  await client.assert.title(title)
 });
 
-Then('the Google search form exists', () => {
-  return client.assert.visible('input[name="q"]')
+Then('the Google search form exists', async () => {
+  await client.assert.visible('input[name="q"]')
 })
