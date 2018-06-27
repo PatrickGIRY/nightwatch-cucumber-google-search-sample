@@ -28,6 +28,11 @@ module.exports = {
       launch_url: 'http://localhost:8087',
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
+      screenshots : {
+        enabled : true,
+        on_failure : true,
+        path: 'screenshots/default'
+      },
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,
